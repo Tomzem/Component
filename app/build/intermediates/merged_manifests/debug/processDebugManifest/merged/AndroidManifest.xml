@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alibaba.android.arouter.demo"
+    android:versionName="0.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="28" />
+
+    <!-- 读写存储的权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="false"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="ARouter demo"
+        android:theme="@style/Base.Theme.AppCompat" >
+        <activity android:name="com.alibaba.android.arouter.demo.SchemeFilterActivity" >
+
+            <!-- Schame -->
+            <intent-filter>
+                <data
+                    android:host="m.aliyun.com"
+                    android:scheme="arouter" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <!-- App Links -->
+            <intent-filter android:autoVerify="true" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="m.aliyun.com"
+                    android:scheme="http" />
+                <data
+                    android:host="m.aliyun.com"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.alibaba.android.arouter.demo.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.alibaba.android.arouter.demo.TestWebview" >
+        </activity>
+        <activity android:name="com.alibaba.android.arouter.demo.testactivity.Test1Activity" >
+        </activity>
+        <activity android:name="com.alibaba.android.arouter.demo.testactivity.Test2Activity" >
+        </activity>
+        <activity android:name="com.alibaba.android.arouter.demo.testactivity.Test3Activity" >
+        </activity>
+        <activity android:name="com.alibaba.android.arouter.demo.testactivity.Test4Activity" >
+        </activity>
+        <activity android:name="com.alibaba.android.arouter.demo.module1.TestModuleActivity" />
+        <activity android:name="com.alibaba.android.arouter.demo.module1.TestModule2Activity" />
+    </application>
+
+</manifest>

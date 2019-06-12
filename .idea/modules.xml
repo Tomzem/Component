@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Component.iml" filepath="$PROJECT_DIR$/Component.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/arouter-annotation/arouter-annotation.iml" filepath="$PROJECT_DIR$/arouter-annotation/arouter-annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/arouter-api/arouter-api.iml" filepath="$PROJECT_DIR$/arouter-api/arouter-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/arouter-compiler/arouter-compiler.iml" filepath="$PROJECT_DIR$/arouter-compiler/arouter-compiler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/arouter-gradle-plugin/arouter-gradle-plugin.iml" filepath="$PROJECT_DIR$/arouter-gradle-plugin/arouter-gradle-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module-java/module-java.iml" filepath="$PROJECT_DIR$/module-java/module-java.iml" />
+    </modules>
+  </component>
+</project>
